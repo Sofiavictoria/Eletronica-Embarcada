@@ -2338,43 +2338,40 @@ start:
     clrf PORTB ;Limpa PORTB
     clrf PORTC ;Limpa PORTC
 
-    BANKSEL ANSEL ; Seleciona o banco de memória do registrador ANSELA
-    clrf ANSEL ; Zera ANSELA para usar todas as portas como digitais
-    clrf ANSELH ; Zera ANSELH para usar todas as portas como digitais
-
     BANKSEL TRISA ; Seleção do banco de memória do registrador TRISA
     clrf TRISA ; Configura TRISA como saida
-    bsf TRISA, 5 ;Configura o pino ((PORTA) and 07Fh), 5 como entrada
-
-    BANKSEL ANSEL ; Seleciona o banco de memória do registrador ANSELA
-    clrf ANSEL ; Zera ANSELA para usar todas as portas como digitais
+    bsf TRISA,5 ;Configura o pino ((PORTA) and 07Fh), 5 como entrada
 
     BANKSEL TRISB ; Seleciona o banco de memória do registrador TRISB
     movlw 0xFF ; Carrega 0xFF (11111111 em binário) no registrador W
     movwf TRISB ; Configura todos os bits de PORTB como entrada
-BANKSEL ANSEL ; Seleciona o banco de memória do registrador ANSELA
-    clrf ANSEL ; Zera ANSELA para usar todas as portas como digitais
+
     BANKSEL TRISC ; Seleciona o banco de memória do registrador TRISC
     movlw 0xFF ; Carrega 0xFF (11111111 em binário) no registrador W
     movwf TRISC ; Configura todos os bits de PORTC como entrada
 
+    BANKSEL ANSEL ; Seleciona o banco de memória do registrador ANSELA
+    clrf ANSELH ; Zera ANSELA para usar todas as portas como digitais
+    clrf ANSEL ; Zera ANSELH para usar todas as portas como digitais
+
+    BANKSEL PORTA
 
 verificaRA5:
     clrwdt ;Zera Can de Guarda (Watchdog Timer)
-    clrw
+    movf PORTA,w ;Move PORTA para W
     btfsc PORTA,5 ; Verifica o valor do pino ((PORTA) and 07Fh), 5
     goto soma ;Se ((PORTA) and 07Fh), 5=1, realiza soma
     goto subtracao ; Se ((PORTA) and 07Fh), 5=0, realiza subtração
 
 soma:
     movf PORTB, w ;Move PORTB para W
-    addwf PORTC,w ; W= PORTB + PORTC
+    addwf PORTC,w ; W= PORTB + PORTC somo o valor de PORTC com o conteúdo atual de W
     movwf PORTA ;armazena o resultado na PORTA
     goto verificaRA5 ;Volta para verificar ((PORTA) and 07Fh), 5 novamente
 
 
 subtracao:
- movf PORTC, w
- subwf PORTB, w
- movwf PORTA ;armazena o resultado na PORTA
- goto verificaRA5 ;Volta para verificar ((PORTA) and 07Fh), 5 novamente
+    movf PORTC, w ;Move PORTC para W
+    subwf PORTB, w ; W= PORTB - PORTC
+    movwf PORTA ;movo o valor de W para PORTA para que o resultado da subtração seja exibido
+    goto verificaRA5 ;Volta para verificar ((PORTA) and 07Fh), 5 novamente

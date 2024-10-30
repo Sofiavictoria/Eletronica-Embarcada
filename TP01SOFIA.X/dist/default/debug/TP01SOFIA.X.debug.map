@@ -6,7 +6,7 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v2.50\pic\dat\20240725155939_en.msgs \
   -cs -h+dist/default/debug\TP01SOFIA.X.debug.sym \
   --cmf=dist/default/debug\TP01SOFIA.X.debug.cmf -z -Q16F886 \
-  -oC:\Users\Sofia\AppData\Local\Temp\xcAsh7o.\driver_tmp_3.o \
+  -oC:\Users\Sofia\AppData\Local\Temp\xcAsf4k.\driver_tmp_3.o \
   --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
   -Mdist/default/debug/TP01SOFIA.X.debug.map -E1 --acfsm=1493 \
   -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 \
@@ -27,14 +27,14 @@ Machine type is 16F886
 
                 Name                               Link     Load   Length Selector   Space Scale
 build/default/debug/TP01_SOFIA.o
-                resetVec                            7D5      7D5        3      FAA       0
-                code                                7D8      7D8       28      FB0       0
+                resetVec                            7D9      7D9        3      FB2       0
+                code                                7DC      7DC       24      FB8       0
                 udata_shr                            70       70        1       70       1
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
-                resetVec                            7D5      7D5        3         0
-                code                                7D8      7D8       28         0
+                resetVec                            7D9      7D9        3         0
+                code                                7DC      7DC       24         0
 
         CLASS   STRCODE        
 
@@ -78,8 +78,8 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 udata_shr                      000070  000001  000071        70       1  COMMON      1
-                resetVec                       0007D5  000003  0007D8       FAA       0  CODE        2
-                code                           0007D8  000028  000800       FB0       0  CODE        2
+                resetVec                       0007D9  000003  0007DC       FB2       0  CODE        2
+                code                           0007DC  000024  000800       FB8       0  CODE        2
 
 
 UNUSED ADDRESS RANGES
@@ -89,14 +89,14 @@ UNUSED ADDRESS RANGES
         BANK1            0A0-0EF            50           1
         BANK2            110-16F            60           1
         BANK3            190-1EF            60           1
-        CODE             000-7D4           7D5           2
+        CODE             000-7D8           7D9           2
                          800-1FFF           800
         COMMON           071-07F             F           1
         CONFIG           2007-2008             2           2
-        CONST            000-7D4           100           2
+        CONST            000-7D8           100           2
                          800-1FFF           100
         EEDATA           2100-21FF           100           2
-        ENTRY            000-7D4           100           2
+        ENTRY            000-7D8           100           2
                          800-1FFF           100
         IDLOC            2000-2003             4           2
         RAM              020-06F            50           1
@@ -107,9 +107,9 @@ UNUSED ADDRESS RANGES
         SFR1             080-09F            20           1
         SFR2             100-10F            10           1
         SFR3             180-18F            10           1
-        STRCODE          000-7D4           7D5           2
+        STRCODE          000-7D8           7D9           2
                          800-1FFF          1800
-        STRING           000-7D4           100           2
+        STRING           000-7D8           100           2
                          800-1FFF           100
 
                                   Symbol Table
