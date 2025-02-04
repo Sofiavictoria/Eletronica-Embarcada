@@ -1,0 +1,438 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"104
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"150
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"59 C:\Users\Alunos\Desktop\SOFIA_TP09.X\main.c
+[v _envia_mensagem envia_mensagem `(v  1 e 1 0 ]
+"69
+[v _exibirMenu exibirMenu `(v  1 e 1 0 ]
+"73
+[v _exibirLista exibirLista `(v  1 e 1 0 ]
+"93
+[v _armazenarNome armazenarNome `(v  1 e 1 0 ]
+"128
+[v _apagarLista apagarLista `(v  1 e 1 0 ]
+"139
+[v _executarComando executarComando `(v  1 e 1 0 ]
+"194
+[v _main main `(v  1 e 1 0 ]
+"66 C:\Users\Alunos\Desktop\SOFIA_TP09.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"99
+[v _EUSART_is_rx_ready EUSART_is_rx_ready `(a  1 e 1 0 ]
+"113
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"144
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"146
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"154
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"157
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"161
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"165
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"50 C:\Users\Alunos\Desktop\SOFIA_TP09.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"59
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"73
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"58 C:\Users\Alunos\Desktop\SOFIA_TP09.X\mcc_generated_files/memory.c
+[v _FLASH_ReadWord FLASH_ReadWord `(us  1 e 2 0 ]
+"95
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+"156
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+"55 C:\Users\Alunos\Desktop\SOFIA_TP09.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+[s S456 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+]
+"131 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc\pic16f1827.h
+[s S462 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S466 . 1 `S456 1 . 1 0 `S462 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES466  1 e 1 @3 ]
+[s S213 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374
+[s S222 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S227 . 1 `S213 1 . 1 0 `S222 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES227  1 e 1 @11 ]
+[s S68 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"570
+[u S77 . 1 `S68 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES77  1 e 1 @17 ]
+"1152
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1214
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+[s S339 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1478
+[s S348 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S353 . 1 `S339 1 . 1 0 `S348 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES353  1 e 1 @149 ]
+"1589
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1648
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1706
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2039
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2096
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2430
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2779
+[v _APFCON0 APFCON0 `VEuc  1 e 1 @285 ]
+"2841
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @286 ]
+"2861
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2913
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2978
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"2985
+[v _EEADRL EEADRL `VEuc  1 e 1 @401 ]
+"3005
+[v _EEADRH EEADRH `VEuc  1 e 1 @402 ]
+"3032
+[v _EEDATL EEDATL `VEuc  1 e 1 @403 ]
+"3037
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"3070
+[v _EEDATH EEDATH `VEuc  1 e 1 @404 ]
+"3090
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+[s S247 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3107
+[u S256 . 1 `S247 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES256  1 e 1 @405 ]
+"3152
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"3172
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3192
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3228
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"3278
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3311
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S110 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3328
+[u S119 . 1 `S110 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES119  1 e 1 @413 ]
+"3373
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S89 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3390
+[u S98 . 1 `S89 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES98  1 e 1 @414 ]
+"3435
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3487
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3516
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"7616
+[v _PLLR PLLR `VEb  1 e 0 @1238 ]
+[s S383 . 22 `uc 1 estado 1 0 `[21]uc 1 Nome 21 1 ]
+"37 C:\Users\Alunos\Desktop\SOFIA_TP09.X\main.c
+[v _listaclientes listaclientes `VE[10]S383  1 e 220 0 ]
+"40
+[v _mensagem0 mensagem0 `DC[50]uc  1 e 50 0 ]
+"41
+[v _mensagem1 mensagem1 `DC[22]uc  1 e 22 0 ]
+"42
+[v _mensagem2 mensagem2 `DC[28]uc  1 e 28 0 ]
+"43
+[v _mensagem3 mensagem3 `DC[9]uc  1 e 9 0 ]
+"44
+[v _mensagem4 mensagem4 `DC[15]uc  1 e 15 0 ]
+"45
+[v _mensagem5 mensagem5 `DC[38]uc  1 e 38 0 ]
+"46
+[v _mensagem6 mensagem6 `DC[38]uc  1 e 38 0 ]
+"47
+[v _mensagem7 mensagem7 `DC[34]uc  1 e 34 0 ]
+"48
+[v _mensagem8 mensagem8 `DC[22]uc  1 e 22 0 ]
+"51
+[v _comando comando `uc  1 e 1 0 ]
+"52
+[v _c_Rx c_Rx `uc  1 e 1 0 ]
+"53
+[v _countNome countNome `uc  1 e 1 0 ]
+"54
+[v _nome_nulo nome_nulo `a  1 e 1 0 ]
+"56
+[v _verificar verificar `a  1 e 1 0 ]
+[s S22 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"52 C:\Users\Alunos\Desktop\SOFIA_TP09.X\mcc_generated_files/eusart.c
+[u S27 . 1 `S22 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES27  1 e 1 0 ]
+"58
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"194 C:\Users\Alunos\Desktop\SOFIA_TP09.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"201
+[v main@rxChar rxChar `uc  1 a 1 12 ]
+"210
+} 0
+"139
+[v _executarComando executarComando `(v  1 e 1 0 ]
+{
+"169
+[v executarComando@j j `i  1 a 2 6 ]
+"164
+[v executarComando@i i `uc  1 a 1 8 ]
+"191
+} 0
+"69
+[v _exibirMenu exibirMenu `(v  1 e 1 0 ]
+{
+"71
+} 0
+"73
+[v _exibirLista exibirLista `(v  1 e 1 0 ]
+{
+"85
+[v exibirLista@j_417 j `i  1 a 2 2 ]
+"78
+[v exibirLista@j j `i  1 a 2 0 ]
+"74
+[v exibirLista@i i `i  1 a 2 4 ]
+"91
+} 0
+"104 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+{
+"106
+[v ___eetoc@data data `uc  1 a 1 7 ]
+"104
+[v ___eetoc@addr addr `*.28VEv  1 p 1 6 ]
+"109
+} 0
+"6
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+{
+"8
+[v ___eecpymem@cp cp `*.30VEuc  1 a 1 5 ]
+"6
+[v ___eecpymem@to to `*.30VEuc  1 p 1 0 ]
+[v ___eecpymem@from from `*.28VEuc  1 p 1 1 ]
+[v ___eecpymem@size size `uc  1 p 1 2 ]
+"36
+} 0
+"93 C:\Users\Alunos\Desktop\SOFIA_TP09.X\main.c
+[v _armazenarNome armazenarNome `(v  1 e 1 0 ]
+{
+"100
+[v armazenarNome@rxChar rxChar `uc  1 a 1 8 ]
+"95
+[v armazenarNome@countByte countByte `uc  1 a 1 9 ]
+"94
+[v armazenarNome@buffer_nome buffer_nome `[21]uc  1 s 21 buffer_nome ]
+"125
+} 0
+"99 C:\Users\Alunos\Desktop\SOFIA_TP09.X\mcc_generated_files/eusart.c
+[v _EUSART_is_rx_ready EUSART_is_rx_ready `(a  1 e 1 0 ]
+{
+"102
+} 0
+"113
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+{
+"130
+} 0
+"128 C:\Users\Alunos\Desktop\SOFIA_TP09.X\main.c
+[v _apagarLista apagarLista `(v  1 e 1 0 ]
+{
+"129
+[v apagarLista@i i `i  1 a 2 9 ]
+"134
+} 0
+"59
+[v _envia_mensagem envia_mensagem `(v  1 e 1 0 ]
+{
+"60
+[v envia_mensagem@i i `uc  1 a 1 4 ]
+"59
+[v envia_mensagem@mensagem mensagem `*.25DCuc  1 p 2 1 ]
+"66
+} 0
+"132 C:\Users\Alunos\Desktop\SOFIA_TP09.X\mcc_generated_files/eusart.c
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 p 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 p 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 p 1 0 ]
+"139
+} 0
+"150 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+{
+[v ___ctoee@addr addr `*.28VEv  1 p 1 6 ]
+[v ___ctoee@data data `uc  1 p 1 7 ]
+"154
+} 0
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+{
+"41
+[v ___memcpyee@ptr ptr `*.30DCuc  1 a 1 5 ]
+"39
+[v ___memcpyee@to to `*.28VEuc  1 p 1 0 ]
+[v ___memcpyee@from from `*.30DCuc  1 p 1 1 ]
+[v ___memcpyee@size size `uc  1 p 1 2 ]
+"101
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 p 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 1 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 p 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 p 1 2 ]
+"51
+} 0
+"50 C:\Users\Alunos\Desktop\SOFIA_TP09.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"57
+} 0
+"73
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"55 C:\Users\Alunos\Desktop\SOFIA_TP09.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"59 C:\Users\Alunos\Desktop\SOFIA_TP09.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"71
+} 0
+"66 C:\Users\Alunos\Desktop\SOFIA_TP09.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"161
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"163
+} 0
+"157
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"159
+} 0
+"165
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"167
+} 0
